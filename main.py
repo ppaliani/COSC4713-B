@@ -53,5 +53,9 @@ def admin_tasks():
 def home():
     return render_template("index.php")
 
+@app.route("index.php")
+def index():
+    return render_template("index.php")    
+
 if __name__ == "__main__":
     app.run(debug=True)
